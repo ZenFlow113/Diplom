@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB1EE5C1-6514-4556-A2F9-CF3A62A64AB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kyrsach</RootNamespace>
+    <AssemblyName>Kyrsach</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admini\AdEmploy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admini\AdEmploy.Designer.cs">
+      <DependentUpon>AdEmploy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admini\Admink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admini\Admink.Designer.cs">
+      <DependentUpon>Admink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admini\AdPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admini\AdPosition.Designer.cs">
+      <DependentUpon>AdPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admini\AdUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admini\AdUser.Designer.cs">
+      <DependentUpon>AdUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admini\ChangePossiton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admini\ChangePossiton.Designer.cs">
+      <DependentUpon>ChangePossiton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admini\infoA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admini\infoA.Designer.cs">
+      <DependentUpon>infoA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admini\posAddCentre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admini\posAddCentre.Designer.cs">
+      <DependentUpon>posAddCentre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admini\usAddCentre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admini\usAddCentre.Designer.cs">
+      <DependentUpon>usAddCentre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autorization.Designer.cs">
+      <DependentUpon>Autorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Direc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director\Direc.Designer.cs">
+      <DependentUpon>Direc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerABC\infoM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerABC\infoM.Designer.cs">
+      <DependentUpon>infoM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelEF\Employees.cs" />
+    <Compile Include="ManagerABC\ManagerA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerABC\ManagerA.Designer.cs">
+      <DependentUpon>ManagerA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Notes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director\Notes.Designer.cs">
+      <DependentUpon>Notes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelEF\Positions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Director\Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director\Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director\TaskAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director\TaskAdd.Designer.cs">
+      <DependentUpon>TaskAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director\TaskChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director\TaskChange.Designer.cs">
+      <DependentUpon>TaskChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director\taskList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director\taskList.Designer.cs">
+      <DependentUpon>taskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelEF\TaskMgrADO.cs" />
+    <Compile Include="ModelEF\Tasks.cs" />
+    <Compile Include="ModelEF\Users.cs" />
+    <EmbeddedResource Include="Admini\AdEmploy.resx">
+      <DependentUpon>AdEmploy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admini\Admink.resx">
+      <DependentUpon>Admink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admini\AdPosition.resx">
+      <DependentUpon>AdPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admini\AdUser.resx">
+      <DependentUpon>AdUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admini\ChangePossiton.resx">
+      <DependentUpon>ChangePossiton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admini\infoA.resx">
+      <DependentUpon>infoA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admini\posAddCentre.resx">
+      <DependentUpon>posAddCentre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admini\usAddCentre.resx">
+      <DependentUpon>usAddCentre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autorization.resx">
+      <DependentUpon>Autorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director\Direc.resx">
+      <DependentUpon>Direc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerABC\infoM.resx">
+      <DependentUpon>infoM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerABC\ManagerA.resx">
+      <DependentUpon>ManagerA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director\Notes.resx">
+      <DependentUpon>Notes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Director\Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director\TaskAdd.resx">
+      <DependentUpon>TaskAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director\TaskChange.resx">
+      <DependentUpon>TaskChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director\taskList.resx">
+      <DependentUpon>taskList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Employees.datasource" />
+    <None Include="Properties\DataSources\Positions.datasource" />
+    <None Include="Properties\DataSources\Staff.datasource" />
+    <None Include="Properties\DataSources\Tasks.datasource" />
+    <None Include="Properties\DataSources\Users.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %284%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
